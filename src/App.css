@@ -1,0 +1,50 @@
+/* Default styles for mobile and small screens */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    padding: 10px;
+    margin: 0 auto;
+  }
+  
+  /* Styles for screens larger than 1024px (desktop screens) */
+  @media screen and (min-width: 1024px) {
+    .container {
+      width: 80%;
+      max-width: 1200px;
+      padding: 20px;
+    }
+  
+    .sidebar {
+      width: 250px; /* Adjust sidebar width for desktop */
+      height: calc(100vh - 60px); /* Assuming 60px for header */
+      position: fixed;
+      top: 60px; /* Assuming 60px for header */
+      left: 0;
+      background-color: #f0f0f0;
+    }
+  
+    .content {
+      margin-left: 270px; /* Margin to account for sidebar */
+      padding: 20px;
+    }
+  
+    .header {
+      height: 60px;
+      background-color: #5b8cb3;
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
+  
+    .footer {
+      height: 50px;
+      background-color: #5b8cb3;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  }
+  
